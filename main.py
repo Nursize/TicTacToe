@@ -37,7 +37,7 @@ def tic_tac_toe():
                 except ValueError:
                    print("\nDat mag niet, kies een ander getal")
                    continue
-                   
+
 #def p1: een nummer kiezen vanuit board 
     def p1():
         n = choose_number()
@@ -97,4 +97,4 @@ def tic_tac_toe():
         print()
         tic_tac_toe()
 
-tic_tac_toe()
+tic_tac_toe() 
