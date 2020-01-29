@@ -20,24 +20,6 @@ def tic_tac_toe():
         print(board[6], board[7], board[8])
         print()
 
-#def p1: een nummer kiezen vanuit board 
-    def p1():
-        n = choose_number()
-        if board[n] == "[X]" or board[n] == "[O]":
-            print("\nDat mag niet, kies een ander getal")
-            p1()
-        else:
-            board[n] = "[X]"
-
-#def p2: een nummer kiezen vanuit board 
-    def p2():
-        n = choose_number()
-        if board[n] == "[X]" or board[n] == "[O]":
-            print("\nDat mag niet, kies een ander getal")
-            p2()
-        else:
-            board[n] = "[O]"
-
 #def choose number: testen op goede nummer 
 #speler mogen niet de nummers kiezen die al gekozen zijn.
     def choose_number():
@@ -55,6 +37,24 @@ def tic_tac_toe():
                 except ValueError:
                    print("\nDat mag niet, kies een ander getal")
                    continue
+                   
+#def p1: een nummer kiezen vanuit board 
+    def p1():
+        n = choose_number()
+        if board[n] == "[X]" or board[n] == "[O]":
+            print("\nDat mag niet, kies een ander getal")
+            p1()
+        else:
+            board[n] = "[X]"
+
+#def p2: een nummer kiezen vanuit board 
+    def p2():
+        n = choose_number()
+        if board[n] == "[X]" or board[n] == "[O]":
+            print("\nDat mag niet, kies een ander getal")
+            p2()
+        else:
+            board[n] = "[O]"
 
 #def check_board: testen op het board 
 #of een speler heeft gewonnen of het spel gelijk is 
