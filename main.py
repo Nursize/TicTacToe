@@ -1,6 +1,11 @@
-#
+#def draw teken board
+#def p1 en p2: nummer kiezen 
+#def choose nummer: regels om nummers te kiezen
+#def check board: steeds controlleren of de speler heeft gekozen of het spel gelijk is. 
+#def while not: spel gaat door tot winnen of het gelijkspel
+#if input: wanneer de spel beëindigd, gaat spel door of niet
 
-def boter_kaas_eieren():
+def tic_tac_toe():
     print ('Boter Kaas & Eieren')
     print ('Speler 1 begint met spelen, kiest een nummer tussen 1 en 9.')
     print ()
@@ -33,7 +38,7 @@ def boter_kaas_eieren():
         else:
             board[n] = "[O]"
 
-#def choose number: testen op goedenummer 
+#def choose number: testen op goede nummer 
 #speler mogen niet de nummers kiezen die al gekozen zijn.
     def choose_number():
         while True:
@@ -90,6 +95,6 @@ def boter_kaas_eieren():
 #if input: 
     if input("Nog een keer? (J/N)\n") == "j":
         print()
-        boter_kaas_eieren()
+        tic_tac_toe()
 
-boter_kaas_eieren()
+tic_tac_toe()
